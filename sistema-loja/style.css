@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1 {
+    background-color: #14213d;
+    font-size: 25px;
+    color: #fca311;
+    padding: 50px;
+    text-align: center;
+}
+
+h2 {
+    color: #f72585;
+    text-align: center;
+}
+
+p {
+    color: #14213d;
+    text-align: center;
+}
+
+.cabecalho div p {
+    color: #14213d;
+    text-align: center;       
+}
+
+.menu {
+    text-align: right;
+    background-color: #f72585;
+    padding: 20px;
+    margin: 0px;
+}
+
+.menu a {
+    color: white;
+    padding: 10px;
+}
+
+.menu a:hover {
+    transition: color .2s linear, border .2s linear;
+    text-decoration: none;
+    color:#3a0ca3;
+}
+
+.rodape p {
+    color: white;
+    text-align: center;
+    margin: 5px;      
+}
+
+a { 
+    text-decoration: none;
+}
+
+.redes-sociais img {
+    max-width: 50px;    
+}
+
+
+footer { 
+    background-color: black;
+    width: 100%;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+}
+
+table {
+    border: 1px;
+}
+
+th {
+    background-color: #3a0ca3;
+    color: #f72585;
+    padding: 5px;
+}
+
+td {
+    background-color:white;
+}
+
+.tabela {
+    text-align: center;
+    color: #f72585;
+    display: block;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+.add-produtos {
+    text-align: center;
+    color: #14213d;
+}
+
+ul {
+    background-color: #fca311;
+    padding: 10px;
+    color: white;
+}
