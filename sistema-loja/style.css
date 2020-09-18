@@ -56,6 +56,10 @@ a {
 
 .redes-sociais img {
     max-width: 50px;    
+    display:block; 
+    margin-left: 50%; 
+    background-color: #3a0ca3;    
+    padding: 10px;
 }
 
 
@@ -63,18 +67,22 @@ footer {
     background-color: black;
     width: 100%;
     height: 5vh;
-    position: fixed;
-    bottom: 0;
+    bottom: 0; 
 }
 
 table {
-    border: 1px;
+    border: 5px solid;
+    color: black;
+    display: inline-block;
+    float: none;
+    margin-left:auto; 
+    margin-right:auto;
+    
 }
 
 th {
     background-color: #3a0ca3;
     color: #f72585;
-    padding: 5px;
 }
 
 td {
@@ -84,9 +92,6 @@ td {
 .tabela {
     text-align: center;
     color: #f72585;
-    display: block;
-    margin-left: 20%;
-    margin-bottom: 5%;
 }
 
 .add-produtos {
@@ -98,4 +103,11 @@ ul {
     background-color: #fca311;
     padding: 10px;
     color: white;
+}
+
+.centralizada {
+    float:none; 
+    display:block; 
+    margin-left:auto; 
+    margin-right:auto;
 }
