@@ -60,6 +60,7 @@ div img {
 .container {
     height: 350px;
     text-align: center;
+    margin-top: auto;
 }
 
 .icone {
@@ -95,6 +96,7 @@ div img {
     color: #c44f00;
     padding: 100px 0;
     font-size: 60px;
+    display: inline-block;
 }
 
 
@@ -137,6 +139,10 @@ td button:hover {
     border-left: 0;
     border-right: 0;
     border-bottom: 2px solid black;
+}
+
+.search:hover {
+    color: blueviolet;
 }
 
 
