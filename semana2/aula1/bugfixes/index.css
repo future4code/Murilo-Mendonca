@@ -132,12 +132,19 @@ td button:hover {
     height: 100px;
 }
 
+.search {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid black;
+}
+
+
 
 #back-button {
     background-color: white;
     width: 100px;
     height: 20px;
-    border: 1px solid black;
     border-radius: 5px;
     font-size: 10px;
     color: black;
