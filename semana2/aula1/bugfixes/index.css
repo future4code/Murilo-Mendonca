@@ -123,6 +123,10 @@ td button {
     color: black;
 }
 
+td button:hover {
+    background-color: #b39f4a;
+}
+
 .container-do-search {
     margin-top: 20px;
     height: 100px;
@@ -137,6 +141,8 @@ td button {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    margin: auto;
+    display: block;
 }
 
 #back-button:hover {
