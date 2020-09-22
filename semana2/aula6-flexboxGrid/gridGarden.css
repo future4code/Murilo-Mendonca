@@ -144,6 +144,42 @@ grid-template-columns: 1fr 5fr;
 
 */
 
+/* exercicio 24
+
+grid-template-columns: 50px repeat(3, 1fr) 50px;
+
+*/
+
+/* exercicio 25
+
+grid-template-columns: 75px 3fr 2fr;
+
+*/
+
+/* exercicio 26
+
+grid-template-rows: 50px 0 0 0 1fr;
+
+*/
+
+/* exercicio 27
+
+grid-template: 60% / 200px;
+
+*/
+
+/* exercicio 28
+
+grid-template: 1fr 50px / 1fr 4fr;
+
+*/
+
+
+
+
+
+
+
 
 
 
