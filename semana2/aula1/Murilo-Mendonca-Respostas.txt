@@ -1,0 +1,12 @@
+Considere que você não possa alterar o arquivo HTML. Pesquise na internet como escrever um código CSS para resolver os problemas a seguir:
+
+a. Como você faria para pintar cada uma das seções (azul, amarelo, salmão) com a sua própria cor?
+
+R: Dividiria as sessões do site em <div>, e aplicaria classes diferentes para cada uma delas, 
+assim conseguiria trocar o background color de cada uma através do css. 
+
+
+b. Você deve ter reparado que os botões possuem a mesma formatação de texto, mas com a cor de fundo diferente. 
+Como você faria para ficarem desta forma?
+
+R: Faria um estilo padrão para os botões, porém cada um deles teria uma classe diferente com um bg de cor diferente.

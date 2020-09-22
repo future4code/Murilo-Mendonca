@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+}
+
+.header {
+    text-align: center;
+    background-color: orange;
+    height: 50px;
+    padding-top: 15px;
+    color: white;
+}
+
+.main-content {
+    background-color: yellowgreen;
+    height: 500px;
+    text-align: center;
+}
+
+.button-orange {
+    background-color: tomato;
+    border: tomato;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.comprar {
+    background-color: slateblue;
+    height: 500px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    align-content: center;
+}
+
+.bgorange {
+    background-color: orange;
+}
+
+table {
+    background-color: white;
+}
+
+.button-red {
+    background-color: green;
+    border: green;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
