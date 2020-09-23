@@ -1,0 +1,213 @@
+/** exercicio 1
+
+display: flex;
+justify-content: flex-end;
+
+**/
+
+/** exercicio 2
+
+display: flex;
+justify-content: center;
+
+**/
+
+/** exercicio 3
+
+display: flex;
+justify-content: space-around;
+
+**/
+
+/** exercicio 4
+
+display: flex;
+justify-content: space-between;
+
+**/
+
+/** exercicio 5
+
+display: flex;
+align-items: flex-end;
+
+**/
+
+/** exercicio 6
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+**/
+
+/** exercicio 7
+
+display: flex;
+justify-content: space-around;
+align-items: flex-end;
+
+**/
+
+/** exercicio 7
+
+display: flex;
+flex-direction: row-reverse;
+
+**/
+
+/** exercicio 8
+
+flex-direction: row-reverse;
+
+**/
+
+/** exercicio 9
+
+display: flex;
+flex-direction: column;
+
+**/
+
+/** exercicio 10
+
+display: flex;
+flex-direction: row-reverse;
+justify-content: flex-end;
+
+**/
+
+/** exercicio 11
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+
+**/
+
+/** exercicio 12
+
+display: flex;
+flex-direction: column-reverse;
+justify-content: space-between;
+
+**/
+
+/** exercicio 13
+
+display: flex;
+justify-content: center;
+flex-direction: row-reverse;
+align-items: flex-end;
+
+**/
+
+/** exercicio 14
+
+display: flex;
+justify-content: center;
+flex-direction: row-reverse;
+align-items: flex-end;
+
+**/
+
+/** exercicio 14
+
+dpond {
+
+    .yellow {
+    order: 1;
+}
+
+**/
+
+/** exercicio 15
+
+    red {
+    order: -1;
+}
+
+**/
+
+/** exercicio 16
+
+align-self: flex-end;
+
+**/
+
+/** exercicio 17
+
+yellow {
+order: 1;
+align-self: flex-end;
+}
+
+**/
+
+/** exercicio 18
+
+flex-wrap: wrap;
+
+**/
+
+/** exercicio 19
+
+flex-direction: column;
+flex-wrap: wrap;
+
+**/
+
+
+/** exercicio 20
+
+flex-flow: column wrap;
+
+**/
+
+/** exercicio 21
+
+align-content: flex-start;
+
+**/
+
+/** exercicio 22
+
+align-content: flex-end;
+
+**/
+
+/** exercicio 23
+
+flex-direction: column-reverse;
+align-content: center;
+
+**/
+
+/** exercicio 24
+
+flex-flow: column-reverse wrap-reverse;
+justify-content: center;
+align-content: space-between;
+
+**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
