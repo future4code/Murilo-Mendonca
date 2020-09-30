@@ -106,6 +106,3 @@ if (generoFilme === "fantasia" && valorIngresso <= 15){
 }
 
 */
-
-/* Desafio 2:
-*/
