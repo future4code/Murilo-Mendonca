@@ -106,3 +106,16 @@ if (generoFilme === "fantasia" && valorIngresso <= 15){
 }
 
 */
+
+// let meuArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+// for (meuArray = 0; meuArray <= 15; meuArray++) {
+// 	console.log(meuArray);
+// }
+
+
+// let meuArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+// meuArray.push(16) 
+
+// for (let i = 0; i < meuArray.length; i++) {
+//     console.log(meuArray[i])
+// }
