@@ -54,15 +54,19 @@
 // console.log(arrayPalavras)
 
 // e)
-const arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
-let arrayMaior = arrayOriginal[0]
+// const arrayOriginal = [80, 30, 130, 40, 60, 21, 8, 120, 90, 103, 110, 55]
+// let arrayMaior = arrayOriginal[0]
+// let arrayMenor = arrayOriginal[0]
 
+// for(let elemento of arrayOriginal){
+//         if (elemento > arrayMaior) {
+//         arrayMaior = elemento
+//     }
+// }
 
-for(let i = 0; i < arrayOriginal.length; i++){
-    let elemento = arrayOriginal[i]
-
-    if (elemento > arrayMaior) {
-        arrayMaior = elemento
-    }
-}
-console.log(`O maior número é ${arrayMaior}`)
+// for(let elementoMenor of arrayOriginal){
+//     if (elementoMenor < arrayMenor) {
+//         arrayMenor = elementoMenor
+//     }
+// }
+// console.log(`O maior número é ${arrayMaior} e o menor número é ${arrayMenor}`)
