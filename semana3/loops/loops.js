@@ -70,3 +70,22 @@
 //     }
 // }
 // console.log(`O maior número é ${arrayMaior} e o menor número é ${arrayMenor}`)
+
+let idadeAnos = Number(prompt("Quantos anos você tem?"))
+let idadeMes = Number(prompt("Qual o mês do seu aniversário?"))
+let idadeDia = Number(prompt("Qual dia você nasceu?"))
+
+for (diasAnos of idadeAnos){
+    diasAnos * 365
+}
+
+for (diasMes of idadeMes){
+    diasMes * 30
+}
+
+for (diasDias of idadeDia){
+    diasDias * 1
+}
+
+diasTotal = diasAnos + diasMes + diasDias
+console.log(`Você já viveu ${diasTotal}`)
