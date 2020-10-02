@@ -5,73 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4Cars</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
+
+    <link rel="stylesheet" href="./responsive.css" type="text/css">
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header id="header">
-       
+
+
         <nav class="menu">
             <img class="logo" src="./img/logo.png" alt="Logo 4cars">
             
             <ul class="links">
-                <li><a class="links" href="#">Home</a></li>
-                <li><a class="links" href="#">Produtos</a></li>
-                <li><a class="links" href="#">Contrate</a></li>
-                <li><button class="links" href="#">Login</button></li>
+
+                <li><a class="links" href="#header">Home</a></li>
+                <li><a class="links" href="#planos">Planos</a></li>
+                <li><a class="links" href="#contrate">Contrate</a></li>
+                <li><button class="links-btn" href="#">Login</button></li>
+
             </ul>     
         </nav>
     </header>
 
+
+<!-- sessao 1 - header -->
         <article class="header-content">
             <section>
-                <h1>
-                    <strong>
+                <h1 id="bold-salmon">                
                         Não compre,<br>
-                        Alugue!
-                    </strong>
+                        Alugue!                    
+
+
                 </h1>
                 <h3>
                     Você de carro novo,<br>
                     sem pagar a mais por isso.
                 </h3>
 
-                <button>Saiba mais</button>
+                <button class="links-btn">Saiba mais</button>
             </section>  
             
             <section class="img-header">
-                <p>imagem</p>
+                <img class="img-header" src="./img/01.jpg" alt="Imagem homem e carro">
             </section>
         </article>
 
-    <main class="planos">
-        <article class="cards">
+<!-- sessao 2 - planos -->
+
+    <main id="planos" class="planos">
+        <article id="cards">
 
             <section class="card1">
-                <p>card1</p>
+                <h1 class="card-text">Plano - Hatch</h1>
+                <p>
+                    <b>Mussum Ipsum,</b> cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça.<br><br> 
+                    <b>Vai Corinthians</b> in monti palavris qui num significa nadis i pareci latim. Quem manda na minha terra sou euzis!<br><br> 
+                    <b>Labenu</b> libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.<br>
+                </p>
+                <button class="planos-btn">Saiba Mais</button>
             </section>
 
             <section class="card2">
-                <p>card2</p>
+                <h1 class="card-text">Plano - Sedan</h1>
+                
+                <p>
+                    <b>Mussum Ipsum,</b> cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi!<br><br>  
+                    <b>Todo</b> mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Paisis, filhis, espiritis santis.<br><br>  
+                    <b>Praesent</b> malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.<br>
+                </p>
+                
+                <button class="planos-btn">Saiba Mais</button>
             </section>
 
             <section class="card3">
-                <p>card3</p>
+                <h1 class="card-text">Plano - Luxo</h1>
+                <p>
+                    <b>Mussum Ipsum,</b> cacilds vidis litro abertis. Manduma pindureta quium dia nois paga.<br><br>  
+                    <b>Tá deprimidis</b>, eu conheço uma cachacis que pode alegrar sua vidis.<br><br> 
+                    <b>A ordem dos tratores</b>, não altera o pão duris.<br><br> 
+                    <b>Não</b> sou faixa preta cumpadi, sou preto inteiris, inteiris.<br>
+                </p>
+                <button class="planos-btn">Saiba Mais</button>
             </section>
 
         </article>
+
     </main>
 
-    <footer>
-        <p>
-            You think water moves fast? You should see ice. It moves like it has a mind.<br> 
-            Like it knows it killed the world once and got a taste for murder.<br> 
-             After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other,<br>  
-             but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now.<br>  
-             We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.<br> 
-
-        </p>
-    </footer>
+<!-- sessao 3 - contrate -->    
     
+    <article id="contrate" class="contrate-container">
+        <img class="contrate-img" src="./img/03.jpg" alt="#">
+        <p>
+            Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.<br><br> 
+            Manduma pindureta quium dia nois paga. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.<br> 
+            Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.<br><br>
+
+            Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Interagi no mé, cursus quis, vehicula ac nisi.<br> 
+            Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Nullam volutpat risus nec leo commodo.<br> 
+            <br><br>
+        </p>
+        <button class="links-btn">Contrate agora</button>      
+    </article>
+    
+<!-- sessao 4 - footer -->  
+
+    <footer id="footer">
+
+        <section class="footer-img">
+            <img class="logo" src="./img/logo.png" alt="Logo 4cars">
+        </section>
+        
+        <section>
+            <h1 id="bold-black">Alugue agora!</h1>
+            <p>
+                You think water moves fast? You should see ice. It moves like it has a mind.<br><br>
+                Like it knows it killed the world once and got a taste for murder.<br><br> 
+                After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other,<br><br>  
+                but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now.<br><br>  
+                We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.<br> 
+            </p>
+        </section>    
+    </footer>
+
+<!-- sessão 5 - redes sociais -->
+
+    <section id="redes-sociais">
+        <ul class="sociais-list">                    
+            <li>
+                <a href="http://www.twitter.com" target="_blank">Twitter</a>
+            </li>
+            <li>
+                <a href="http://www.facebook.com" target="_blank">Facebook</a>
+            </li>
+            <li>
+                <a href="http://www.instagram.com" target="_blank">Instagram</a>
+            </li>
+
+            <li><a href="#header">
+                    <button class="voltar">Topo</button>
+                </a>
+            </li>
+        </ul>
+    </section>
+
 </body>
 </html>
