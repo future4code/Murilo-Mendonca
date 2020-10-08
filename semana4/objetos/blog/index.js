@@ -18,7 +18,7 @@ let criarPost = () => {
     window.alert("Envie um link válido.");
   }
 
-  imprimirNoHtml.innerHTML += `<br> ${inputTitulo.value} <br> ${inputAutor.value} <br> ${inputConteudo.value}`;
+  imprimirNoHtml.innerHTML += `<section><br>${inputTitulo.value} <br> ${inputAutor.value} <br> ${inputConteudo.value}</section>`;
 
   inputTitulo.value = "";
   inputAutor.value = "";
