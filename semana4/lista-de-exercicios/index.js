@@ -66,3 +66,12 @@
 //     }
 // }
 // comparaNumeros(14, 180)
+
+
+// -------------------------- FUNÇÕES ----------------
+
+// EXERCÍCIO 02:
+let imprimirNaTela = (mensagem) => {
+    return alert("Hello Future4")
+}
+imprimirNaTela()
