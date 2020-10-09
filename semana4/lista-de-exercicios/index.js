@@ -40,3 +40,29 @@
     //     i++
     // }
 
+// EXERCÍCIO 05:
+
+// let comparaNumeros = function (num1, num2){
+//     if(num1 > num2){
+//         console.log(`O maior é ${num1}`)
+//     } else {
+//         console.log(`O maior é ${num2}`)
+//     }   
+
+//     if(num1 % num2 === 0){
+//         console.log(`${num1} é divisível por ${num2}`)
+//     } else {
+//         console.log(`${num1} não é divisível por ${num2}`)
+//     }
+    
+//     if (num1 > num2){
+//         let dividir = num1 - num2
+//         console.log(`A diferença entre eles é ${dividir}`)
+//     } else if (num2 > num1){
+//         dividir = num2 - num1
+//         console.log(`A diferença entre eles é ${dividir}`)
+//     } else {
+//         console.log(`Eles são iguais`)
+//     }
+// }
+// comparaNumeros(14, 180)
