@@ -12,3 +12,7 @@
 //R: O primeiro console.log irá receber o array total de números.
 //R: O segundo console.log irá receber a quantidade total de números pares.
 //R: O segundo console.log irá receber a quantidade total de números ímpares.
+
+// EXERCÍCIO 04:
+//R: O console.log(numero1) vai receber o menor número do array que é -10.
+//R: O console.log(numero2) vai receber o maior número do array que é 1590.
