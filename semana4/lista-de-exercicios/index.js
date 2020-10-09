@@ -16,3 +16,27 @@
 // EXERCÍCIO 04:
 //R: O console.log(numero1) vai receber o menor número do array que é -10.
 //R: O console.log(numero2) vai receber o maior número do array que é 1590.
+
+
+// -------------------------- LÓGICA DE PROGRAMAÇÃO ----------------
+// EXERCÍCIO 01:
+// for, for of, while
+
+// const arrayNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+    // for(let i = 0; i < 5; i++){
+    //     let menoresQueCinco = arrayNumeros[i]
+    //     console.log(menoresQueCinco)
+    // }
+    
+    // for(let numerosPares of arrayNumeros){
+    //     if(numerosPares % 2 === 0)
+    //     console.log(numerosPares)
+    // }
+
+    //     let i = 0
+    //     while (i < 5) {
+    //     console.log(i)
+    //     i++
+    // }
+
