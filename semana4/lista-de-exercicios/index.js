@@ -7,3 +7,8 @@
 // EXERCÍCIO 02:
 //R: O console.log de novoMontante vai receber o valor de 150*1.1
 //R: O console.log de segundoMontante vai receber o valor de "Tipo de investimento informado incorreto!"
+
+// EXERCÍCIO 03:
+//R: O primeiro console.log irá receber o array total de números.
+//R: O segundo console.log irá receber a quantidade total de números pares.
+//R: O segundo console.log irá receber a quantidade total de números ímpares.
