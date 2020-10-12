@@ -152,15 +152,49 @@
 
 // -------------------------- FUNÇÕES DE ARRAY ----------------
 // EXERCÍCIO 01:
+// a)
+// let arrayDePessoas = [
+// 	{ nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 } 
+// ]
+
+// const somenteAdultos = arrayDePessoas.filter ((pessoa) =>{
+//     if (pessoa.idade >= 20) {
+//         return true
+//     }
+//     return false
+// })
+// console.log(somenteAdultos)
+
+// b)
+// let arrayDePessoas = [
+// 	{ nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 } 
+// ]
+
+// const somenteAdolescentes = arrayDePessoas.filter ((pessoa) =>{
+//     if (pessoa.idade < 20) {
+//         return true
+//     }
+//     return false
+// })
+// console.log(somenteAdolescentes)
 
 
 
 // EXERCÍCIO 02:
 // const array = [1, 2, 3, 4, 5, 6]
-// // a)
-// const multiplicadosPorDois = array.filter((numero, index, array) => {
-//     const resultado =  numero *2
-//     console.log(resultado)
-// })
+// a)
+    // const multiplicadosPorDois = array.filter((numero, index, array) => {
+    //     const resultado =  numero *2
+    //     console.log(resultado)
+    // })
+
+// b)
+
 
 
