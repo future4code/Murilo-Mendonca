@@ -52,6 +52,7 @@
 // EXERCÍCIO 03:
 
 
+
 // EXERCÍCIO 04:
 
 // let trigonometria = (lado1, lado2, lado3) =>{
@@ -103,3 +104,12 @@
 //     return alert("Hello Future4")
 // }
 // imprimirNaTela()
+
+
+// -------------------------- OBJETOS ----------------
+// EXERCÍCIO 01:
+// R:  Objetos são grandes arrays que armazenam informações que o usuário digita no nosso site.
+
+
+// EXERCÍCIO 03:
+
