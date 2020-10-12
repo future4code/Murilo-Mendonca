@@ -112,21 +112,25 @@
 
 
 // EXERCÍCIO 03:
-// let titulo = prompt("Digite o NOME do seu filme favorito")
-// let ano = prompt("Digite o ANO do seu filme favorito")
-// let diretor = prompt("Digite o DIRETOR do seu filme favorito")
+// const filmeFavorito = {
+//     titulo: 'Pulp Fiction',
+//     ano: 1994,
+//     diretor: 'Quentin Tarantino',
+//     atores: ['John Travolta', ' Samuel L. Jackson', ' Uma Thurman']    
+// }
 
+// console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor}, e estrelado por: ${filmeFavorito.atores}.`)
 
 
 // EXERCÍCIO 04:
-const pessoa = {
-    nome: 'Murilo', 
-    idade: 31, 
-    email:'murilomendonca@live.com',
-    endereco: 'Avenida Rolândia' 
-} 
+// const pessoa = {
+//     nome: 'Murilo', 
+//     idade: 31, 
+//     email:'murilomendonca@live.com',
+//     endereco: 'Avenida Rolândia' 
+// } 
 
-const anonimizarPessoa = {
-    ...pessoa,
-    nome: "Anônimo"
-}
+// const anonimizarPessoa = {
+//     ...pessoa,
+//     nome: "Anônimo"
+// }
