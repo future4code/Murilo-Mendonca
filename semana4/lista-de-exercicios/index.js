@@ -187,14 +187,17 @@
 
 
 // EXERCÍCIO 02:
-// const array = [1, 2, 3, 4, 5, 6]
 // a)
-    // const multiplicadosPorDois = array.filter((numero, index, array) => {
-    //     const resultado =  numero *2
-    //     console.log(resultado)
-    // })
+// const array = [1, 2, 3, 4, 5, 6]
+//     const multiplicadosPorDois = array.filter((numero) => {
+//         const resultado =  numero *2
+//         console.log(resultado)
+// })
 
 // b)
-
-
+// const array = [1, 2, 3, 4, 5, 6]
+//     const multiplicadosPorTres = array.map((numero) => {
+//         return String(numero * 3)        
+// })
+// console.log(multiplicadosPorTres)
 
