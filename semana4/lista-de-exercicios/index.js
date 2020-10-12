@@ -113,7 +113,7 @@
 // R:  Objetos são grandes arrays que armazenam informações que o usuário digita no nosso site.
 
 
-// EXERCÍCIO 02: ********************************************************************
+// EXERCÍCIO 02:
 // let criarRetangulo = (lado1, lado2) =>{
 //     return retangulo = {
 //         largura: lado1,
@@ -152,5 +152,15 @@
 
 // -------------------------- FUNÇÕES DE ARRAY ----------------
 // EXERCÍCIO 01:
+
+
+
+// EXERCÍCIO 02:
+// const array = [1, 2, 3, 4, 5, 6]
+// // a)
+// const multiplicadosPorDois = array.filter((numero, index, array) => {
+//     const resultado =  numero *2
+//     console.log(resultado)
+// })
 
 
