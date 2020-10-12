@@ -40,6 +40,34 @@
     //     i++
     // }
 
+
+// EXERCÍCIO 02:
+// a) true
+// b) true
+// c) false
+// d) false
+// e) false
+
+
+// EXERCÍCIO 03:
+
+
+// EXERCÍCIO 04:
+
+// let trigonometria = (lado1, lado2, lado3) =>{
+//     if(lado1 === lado2 && lado2 === lado3){
+//         console.log("Triangulo Equilátero")
+
+//     } else if (lado1 !== lado2 && lado2 !== lado3 && lado1 !== lado3){
+//         console.log("Triângulo Escaleno")
+
+//     } else {
+//         console.log("Triângulo Isósceles")
+//     }
+// }   
+// trigonometria(13, 13, 13)
+
+
 // EXERCÍCIO 05:
 
 // let comparaNumeros = function (num1, num2){
@@ -71,7 +99,7 @@
 // -------------------------- FUNÇÕES ----------------
 
 // EXERCÍCIO 02:
-let imprimirNaTela = (mensagem) => {
-    return alert("Hello Future4")
-}
-imprimirNaTela()
+// let imprimirNaTela = (mensagem) => {
+//     return alert("Hello Future4")
+// }
+// imprimirNaTela()
