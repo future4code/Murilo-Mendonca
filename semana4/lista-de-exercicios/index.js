@@ -201,3 +201,13 @@
 // })
 // console.log(multiplicadosPorTres)
 
+// c)
+// const array = [1, 2, 3, 4, 5, 6]
+//     const arrayStrings = array.map((numero) => {
+//         if(numero % 2 === 0){
+//             return `${numero} é par`
+//         }
+//         return `${numero} é impar`
+//     })
+// console.log(arrayStrings)
+
