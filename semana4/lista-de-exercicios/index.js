@@ -112,4 +112,21 @@
 
 
 // EXERCÍCIO 03:
+// let titulo = prompt("Digite o NOME do seu filme favorito")
+// let ano = prompt("Digite o ANO do seu filme favorito")
+// let diretor = prompt("Digite o DIRETOR do seu filme favorito")
 
+
+
+// EXERCÍCIO 04:
+const pessoa = {
+    nome: 'Murilo', 
+    idade: 31, 
+    email:'murilomendonca@live.com',
+    endereco: 'Avenida Rolândia' 
+} 
+
+const anonimizarPessoa = {
+    ...pessoa,
+    nome: "Anônimo"
+}
