@@ -49,7 +49,7 @@
 // e) false
 
 
-// EXERCÍCIO 03:
+// EXERCÍCIO 03: *******************************************
 
 
 
@@ -98,6 +98,8 @@
 
 
 // -------------------------- FUNÇÕES ----------------
+// EXERCÍCIO 01: ***********************************************************
+
 
 // EXERCÍCIO 02:
 // let imprimirNaTela = (mensagem) => {
@@ -109,6 +111,18 @@
 // -------------------------- OBJETOS ----------------
 // EXERCÍCIO 01:
 // R:  Objetos são grandes arrays que armazenam informações que o usuário digita no nosso site.
+
+
+// EXERCÍCIO 02: ********************************************************************
+// let criarRetangulo = (lado1, lado2) =>{
+//     return retangulo = {
+//         largura: lado1,
+//         altura: lado2,
+//         perímetro: (2*(lado1 + lado2)),
+//         área: (lado1 * lado2)
+//     }
+// }
+// console.log(criarRetangulo(100, 50))
 
 
 // EXERCÍCIO 03:
@@ -134,3 +148,9 @@
 //     ...pessoa,
 //     nome: "Anônimo"
 // }
+
+
+// -------------------------- FUNÇÕES DE ARRAY ----------------
+// EXERCÍCIO 01:
+
+
