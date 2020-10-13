@@ -49,7 +49,8 @@
 // e) false
 
 
-// EXERCÍCIO 03: *******************************************
+// EXERCÍCIO 03:
+// Não consegui encontrar a solução do problema.
 
 
 
@@ -238,6 +239,7 @@
 // })
 // console.log(naoPode)
 
+
 // EXERCÍCIO 04:
 
 // const consultas = [
@@ -260,5 +262,9 @@
 //         console.log(`Olá Sra. ${paciente.nome}. Estamos enviando esta mensagem para lembrá-la da sua consulta no dia ${paciente.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail.`)
 //     }   
 // })
+
+
+// EXERCÍCIO 05:
+// Não consegui encontrar a solução do problema.
 
 
