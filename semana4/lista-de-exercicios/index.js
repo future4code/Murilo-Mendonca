@@ -213,14 +213,14 @@
 
 // EXERCÍCIO 03:
 // a)
-const pessoas = [
-	{ nome: "Paula", idade: 12, altura: 1.8},
-	{ nome: "João", idade: 20, altura: 1.3},
-	{ nome: "Pedro", idade: 15, altura: 1.9},
-	{ nome: "Luciano", idade: 22, altura: 1.8},
-	{ nome: "Artur", idade: 10, altura: 1.2},
-	{ nome: "Soter", idade: 70, altura: 1.9}
-]
+// const pessoas = [
+// 	{ nome: "Paula", idade: 12, altura: 1.8},
+// 	{ nome: "João", idade: 20, altura: 1.3},
+// 	{ nome: "Pedro", idade: 15, altura: 1.9},
+// 	{ nome: "Luciano", idade: 22, altura: 1.8},
+// 	{ nome: "Artur", idade: 10, altura: 1.2},
+// 	{ nome: "Soter", idade: 70, altura: 1.9}
+// ]
 
 // const podeEntrar = pessoas.filter((pessoas) => {
 //     if(pessoas.idade > 14 && pessoas.altura >= 1.5 && pessoas.idade < 60){
@@ -237,3 +237,28 @@ const pessoas = [
 //     return false
 // })
 // console.log(naoPode)
+
+// EXERCÍCIO 04:
+
+// const consultas = [
+// 	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+// 	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+// 	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+// 	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+// ]
+
+// const enviarEmail = consultas.filter ((paciente) => {
+//     if (paciente.cancelada === true && paciente.genero === "masculino") {
+//         console.log(`Olá Sr. ${paciente.nome}. Infelizmente, sua consulta marcada para o dia ${paciente.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la.`)
+
+//     } else if (paciente.cancelada === true && paciente.genero === "feminino") {
+//         console.log(`Olá Sra. ${paciente.nome}. Infelizmente, sua consulta marcada para o dia ${paciente.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la.`) 
+
+//     } else if (paciente.cancelada === false && paciente.genero === "masculino") { 
+//         console.log(`Olá Sr. ${paciente.nome}. Estamos enviando esta mensagem para lembrá-lo da sua consulta no dia ${paciente.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail.`)
+//     } else if (paciente.cancelada === false && paciente.genero === "feminino") { 
+//         console.log(`Olá Sra. ${paciente.nome}. Estamos enviando esta mensagem para lembrá-la da sua consulta no dia ${paciente.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail.`)
+//     }   
+// })
+
+
