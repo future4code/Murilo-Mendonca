@@ -36,7 +36,9 @@ export class App extends React.Component {
     return (
       <div className="App">
         {this.renderizaEtapa()}
+        {this.state.etapa !== 4 &&
         <button onClick={this.onClickProximaEtapa}>Próxima etapa</button>
+        }
       </div>
     );
   };  
