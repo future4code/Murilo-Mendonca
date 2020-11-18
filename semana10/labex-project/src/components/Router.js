@@ -8,6 +8,7 @@ import Header from './Header';
 import Footer from './Footer';
 import SignUpPage from '../screens/SignUpPage'
 import AddNewTrip from '../screens/AddNewTrip';
+import TripDetailsPage from '../screens/TripDetailsPage';
 
 function Router() {
     return (
@@ -46,6 +47,12 @@ function Router() {
           <Route exact path="/add-trip">
             <Header />
             <AddNewTrip />
+            <Footer />
+          </Route>
+
+          <Route exact path="/trip-details">
+            <Header />
+            <TripDetailsPage />
             <Footer />
           </Route>
           

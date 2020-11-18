@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useHistory } from "react-router-dom";
+import useProtectedPage from '../components/useProtectedPage'
 
 const AddContainer = styled.div`
     display: flex;
@@ -12,9 +13,10 @@ const AddContainer = styled.div`
     height: 75vh;
 `
 function AddNewTrip() {
-
     const history = useHistory();
+    useProtectedPage();
 
+    
     const goToAddTrip = () => { 
         history.push("/add-trip");
   };

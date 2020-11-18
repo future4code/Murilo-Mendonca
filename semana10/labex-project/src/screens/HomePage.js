@@ -1,6 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import { useHistory } from "react-router-dom";
+import { useEffect } from 'react';
+import useProtectedPage from '../components/useProtectedPage'
 
 const HomeContainer = styled.div`
     display: flex;
@@ -13,13 +15,23 @@ const HomeContainer = styled.div`
 
 function HomePage() {
   const history = useHistory();
+  useProtectedPage();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+      history.push("/");
+    }
+  }, [history]);
+
 
   const goToApplicationFormPage = () => { 
     history.push("/application-form");
   };
   
   const goToListTripsPage = () => {;
-    history.push("/list");
+    history.push("/trip-details");
   };
 
   return (
