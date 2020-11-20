@@ -1,5 +1,6 @@
-import Axios from 'axios';
+import axios from 'axios';
 import React, { useState, useEffect } from 'react'
+import { useHistory, useParams } from 'react-router-dom';
 import styled from 'styled-components'
 import useProtectedPage from '../components/useProtectedPage'
 
@@ -8,14 +9,58 @@ const TripsContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
     width: 100%;
     height: 75vh;
+    background: linear-gradient(225deg, #6930c3, #5e60ce, #5390d9, #4ea8de);
+
+    p {
+        color: white;
+    }
 `
 
+const BgTripDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+  background: black;
+  padding: 10px;
+  border-radius: 10px;
+  color: #5e60ce; 
+
+  h2 {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #4ea8de;
+  }
+
+`
+const ButtonBack = styled.button`
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  border: none;
+  margin-right: 20px;
+  padding: 12px 36px;
+  background: linear-gradient(45deg, #6930c3, #4ea8de);
+  cursor: pointer;
+`
 
 function TripDetailsPage() {
-    const[trip, setTrip] = useState({});
+    const[trips, setTrips] = useState({});
+    const history = useHistory();
+    const pathParams = useParams();
+    const id = pathParams.id;
     useProtectedPage();
 
     useEffect(() => {
@@ -23,32 +68,37 @@ function TripDetailsPage() {
       }, []);
 
       const getTripDetail = () => {
-          Axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/murilo-dumont/trip/3Ga6Stvj6B687TNgFK72",{
+          axios.get(`https://us-central1-labenu-apis.cloudfunctions.net/labeX/murilo-dumont/trip/${id}`, {
               headers: {
                   auth: localStorage.getItem("token")
               }
           })
           .then((response) => {
-              setTrip(response.data.trip)
+              setTrips(response.data.trip)
           })
           .catch((error) => {
               console.log(error)
           })
       }
 
-  return (
-    <TripsContainer>
-      <h1>Trips</h1>
-      <select>Choose Your Trip</select>
-      <p>Id: Trip Id</p>
-      <p>name</p>
-      <p>planet</p>
-      <p>Date: 11/11/2010</p>
-      <p>Duration: 550 days</p>
-      <p>Description: A big and red planet.</p>
-            
-    </TripsContainer>
-  );
+      const goBack = () => {
+        history.goBack();
+    }
+
+    return (   
+        <TripsContainer>
+            <BgTripDetails> 
+                <h2>Trip Details</h2>
+                <p>Name: {trips.name}</p>
+                <p>Planet: {trips.planet}</p>
+                <p>Date: {trips.date}</p>
+                <p>Duration: {trips.durationInDays}</p>
+                <p>Description: {trips.description}</p>
+                <ButtonBack onClick={goBack}>Voltar</ButtonBack>
+            </BgTripDetails>       
+        </TripsContainer>
+        
+    )        
 }
 
 export default TripDetailsPage;

@@ -11,6 +11,25 @@ const SignContainer = styled.div`
     background-color: green;
     width: 100%;
     height: 75vh;
+    background: linear-gradient(180deg, #6930c3, #5e60ce, #5390d9, #4ea8de);
+
+    input {
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: none;
+    }
+`
+const ButtonSignUp = styled.button`
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  border: none;
+  margin-right: 20px;
+  padding: 12px 36px;
+  background: linear-gradient(90deg, #6930c3, #4ea8de);
+  cursor: pointer;
 `
 
 function SignUp() {
@@ -22,7 +41,9 @@ function SignUp() {
     const token = localStorage.getItem("token");
 
     if (token) {
-      history.push("/trip-detail");
+      history.push("/list");
+    } else {
+      history.push("/signup")
     }
     
   }, [history])
@@ -62,7 +83,7 @@ function SignUp() {
         type="password" value={password} onChange={handlePassword} placeholder="Password"
       />
 
-      <button onClick={login}>Sign Up</button>
+      <ButtonSignUp onClick={login}>Sign Up</ButtonSignUp>
     </SignContainer>
   );
 }

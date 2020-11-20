@@ -11,16 +11,15 @@ const AddContainer = styled.div`
     background-color: gray;
     width: 100%;
     height: 75vh;
+    background: linear-gradient(180deg, #6930c3, #5e60ce, #5390d9, #4ea8de);
 `
 function AddNewTrip() {
     const history = useHistory();
     useProtectedPage();
-
     
     const goToAddTrip = () => { 
         history.push("/add-trip");
   };
-
 
   return (
     <AddContainer>

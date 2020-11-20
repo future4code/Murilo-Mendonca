@@ -50,7 +50,7 @@ function Router() {
             <Footer />
           </Route>
 
-          <Route exact path="/trip-details">
+          <Route exact path="/trips/:id">
             <Header />
             <TripDetailsPage />
             <Footer />

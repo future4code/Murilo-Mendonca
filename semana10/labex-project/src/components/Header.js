@@ -9,6 +9,20 @@ const HeaderContainer = styled.div`
     background-color: blue;
     width: 100%;
     height: 20vh;
+    background: white;
+
+`
+const ButtonHeader = styled.button`
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  border: none;
+  margin-right: 20px;
+  padding: 12px 36px;
+  background: linear-gradient(225deg, #6930c3, #4ea8de);
+  cursor: pointer;
+
 `
 
 function Header() {
@@ -26,18 +40,19 @@ function Header() {
     history.push("/application-form");
   };
 
-  const goToLoginPage = () => {;
-    history.push("/login");
+  const goToSignupPage = () => {;
+    history.push("/signup");
   };
 
+  
   return (
     <HeaderContainer>
       <image />
       <ul>
-          <button onClick={goToHome}>Home</button>
-          <button onClick={goToListTripsPage}>Trips</button>
-          <button onClick={goToApplicationFormPage}>Application</button>
-          <button onClick={goToLoginPage}>Login</button>
+          <ButtonHeader onClick={goToHome}>Home</ButtonHeader>
+          <ButtonHeader onClick={goToListTripsPage}>Trips</ButtonHeader>
+          <ButtonHeader onClick={goToApplicationFormPage}>Application</ButtonHeader>       
+          <ButtonHeader onClick={goToSignupPage}>SignUp</ButtonHeader>       
       </ul>
     </HeaderContainer>
   );

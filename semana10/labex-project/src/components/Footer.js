@@ -8,12 +8,18 @@ const FooterContainer = styled.div`
     background-color: orange;
     width: 100%;
     height: 5vh;
+    background: black;
+
+    p{
+      color: white;
+      font-size: 10px;
+    }
 `
 
 function Footer() {
   return (
     <FooterContainer>
-      <p>Footer</p>
+      <p>SpaceX &copy; Murilo Mendonca - Labenu 2020</p>
     </FooterContainer>
   );
 }

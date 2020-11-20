@@ -11,9 +11,34 @@ const LoginContainer = styled.div`
     background-color: green;
     width: 100%;
     height: 75vh;
+    background: linear-gradient(90deg, #6930c3, #5e60ce, #5390d9, #4ea8de);
+
+    input {
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: none;
+    }
 `
+
+const ButtonLogin = styled.button`
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  border: none;
+  margin-right: 20px;
+  padding: 12px 36px;
+  background: linear-gradient(90deg, #6930c3, #4ea8de);
+  cursor: pointer;
+`
+
 const ClickHere = styled.button`
   cursor: pointer;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  color: white;
 `
 
 function LoginPage() {
@@ -24,7 +49,7 @@ function LoginPage() {
   useEffect(() => {
     const token = localStorage.getItem("token")
       if(token) {
-        history.push("/add-trip")
+        history.push("/list")
       }
   }, [history])
 
@@ -37,7 +62,7 @@ function LoginPage() {
       .post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/murilo-dumont/login", body)
       .then((response) => {
         localStorage.setItem("token", response.data.token)
-        history.push("/add-trip")
+        history.push("/list")
       })
       .catch((error) => {
         console.log(error)
@@ -59,14 +84,13 @@ function LoginPage() {
   return (
     <LoginContainer>
       <h1>Login</h1>
-
       <input 
         value={email} onChange={handleEmail} placeholder="E-mail" //murilo@email.com
       />
       <input 
         type="password" value={password} onChange={handlePassword} placeholder="Password" //teste123
       />
-      <button onClick={login}>Login</button>
+      <ButtonLogin onClick={login}>Login</ButtonLogin>
 
       <p>Not a member yet? Create your account <ClickHere onClick={goToSignUpPage}>Here</ClickHere>.</p>
     </LoginContainer>
