@@ -2,7 +2,7 @@ import React from 'react'
 import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 import useProtectedPage from '../components/useProtectedPage'
-import useTripList from '../Hooks/useTripList'
+import useTripList from '../hooks/useTripList'
 
 
 const TripsContainer = styled.div`
@@ -38,7 +38,26 @@ const BgTrips = styled.div`
     color: #4ea8de;
     cursor: pointer;
   }
+
+  p:hover {
+    color: white; 
+  }
 `
+
+const ButtonCreate = styled.button`
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  margin-right: 20px;
+  padding: 12px 36px;
+  background: linear-gradient(225deg, #6930c3, #4ea8de);
+  cursor: pointer;
+  outline: none;
+`
+
 function ListTripsPage() {
 
   const history = useHistory();
@@ -50,6 +69,10 @@ function ListTripsPage() {
     history.push(`/trips/${tripId}`)
   }
 
+  const goToCreate = () => {
+    history.push("/add-trip");
+}
+
   return (
     <TripsContainer>
       <BgTrips>
@@ -57,7 +80,8 @@ function ListTripsPage() {
       {trips.map((trip) => {
         return <p onClick={() => {goToTripDetails(trip.id)}}>{trip.name}</p>
       })}
-      </BgTrips>          
+      </BgTrips>
+      <ButtonCreate onClick={goToCreate}>Create new trip</ButtonCreate>          
     </TripsContainer>
   );
 }

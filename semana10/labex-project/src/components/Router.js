@@ -7,7 +7,7 @@ import LoginPage from '../screens/LoginPage'
 import Header from './Header';
 import Footer from './Footer';
 import SignUpPage from '../screens/SignUpPage'
-import AddNewTrip from '../screens/AddNewTrip';
+import TripCreatePage from '../screens/TripCreatePage'
 import TripDetailsPage from '../screens/TripDetailsPage';
 
 function Router() {
@@ -46,7 +46,7 @@ function Router() {
 
           <Route exact path="/add-trip">
             <Header />
-            <AddNewTrip />
+            <TripCreatePage />
             <Footer />
           </Route>
 

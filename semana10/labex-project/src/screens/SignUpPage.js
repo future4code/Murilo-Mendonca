@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { useHistory } from "react-router-dom";
-import Axios from 'axios';
+import axios from 'axios';
 
 const SignContainer = styled.div`
     display: flex;
@@ -30,6 +30,7 @@ const ButtonSignUp = styled.button`
   padding: 12px 36px;
   background: linear-gradient(90deg, #6930c3, #4ea8de);
   cursor: pointer;
+  outline: none;
 `
 
 function SignUp() {
@@ -62,7 +63,7 @@ function SignUp() {
       password: password
     }
 
-    Axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/murilo-dumont/signup", body)
+    axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/murilo-dumont/signup", body)
     .then((response) => {
       localStorage.setItem("token", response.data.token);
       history.push("/login");

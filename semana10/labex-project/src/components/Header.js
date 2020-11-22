@@ -13,7 +13,6 @@ const HeaderContainer = styled.div`
 
 `
 const ButtonHeader = styled.button`
-  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: white;
@@ -22,7 +21,7 @@ const ButtonHeader = styled.button`
   padding: 12px 36px;
   background: linear-gradient(225deg, #6930c3, #4ea8de);
   cursor: pointer;
-
+  outline: none;
 `
 
 function Header() {

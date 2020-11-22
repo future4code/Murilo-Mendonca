@@ -31,6 +31,7 @@ const ButtonLogin = styled.button`
   padding: 12px 36px;
   background: linear-gradient(90deg, #6930c3, #4ea8de);
   cursor: pointer;
+  outline: none;
 `
 
 const ClickHere = styled.button`

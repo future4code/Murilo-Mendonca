@@ -25,7 +25,8 @@ const ButtonHome = styled.button`
   padding: 12px 36px;
   border: 2px solid white;
   cursor: pointer;
-
+  outline: none;
+  
 `
 
 function HomePage() {
