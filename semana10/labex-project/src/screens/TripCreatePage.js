@@ -122,10 +122,10 @@ function TripCreatePage() {
           <option onclick={form.planet} value={"mercury"}>Mercury</option>
           <option onclick={form.planet} value={"venus"}>Venus</option>
           <option onclick={form.planet} value={"mars"}>Mars</option>
-          <option value={"jupiter"}>Jupiter</option>
-          <option value={"saturn"}>Saturn</option>
-          <option value={"uranus"}>Uranus</option>
-          <option value={"neptune"}>Neptune</option>
+          <option onclick={form.planet} value={"jupiter"}>Jupiter</option>
+          <option onclick={form.planet} value={"saturn"}>Saturn</option>
+          <option onclick={form.planet} value={"uranus"}>Uranus</option>
+          <option onclick={form.planet} value={"neptune"}>Neptune</option>
         </select>
 
         <input 
