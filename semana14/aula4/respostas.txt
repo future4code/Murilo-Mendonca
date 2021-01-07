@@ -1,0 +1,11 @@
+// EXERCICIO 1
+
+A) R: Para a busca de todos os usuários, devemos utilizar o método GET.
+
+B) R: A entidade nesse caso seria a "user"
+
+// EXERCICIO 2
+
+A) R: 
+
+B) R: Utilizando o enum e verificando se ele é válido.
