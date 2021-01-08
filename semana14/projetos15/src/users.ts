@@ -1,5 +1,5 @@
 export enum TIPOCONTA {
-    CONTACORRENTE = 'CONTACORRENTE',
+    CONTACORRENTE = "CONTACORRENTE",
     CONTAPOUPANCA = "CONTAPOUPANCA"
 }
 
@@ -7,14 +7,14 @@ export type user = {
     cpf: number,
     nome: string,
     nascimento: string,
-    tipo: TIPOCONTA,
-    extrato: "0"
+    tipo: string,
+    extrato: string
 }
 
 export type transactions = {
-    deposit: string,
-    withdraw: string,
-    transfer: string
+    deposit: number,
+    withdraw: number,
+    transfer: number
 }
 
 export const users: user[] = [
@@ -30,6 +30,13 @@ export const users: user[] = [
         "nome": "Chica da Silva",
         "nascimento": "15081978",
         "tipo": TIPOCONTA.CONTAPOUPANCA,
+        "extrato": "0"
+    },
+    {
+        "cpf": 45612378911,
+        "nome": "Ambrosio Jaspion",
+        "nascimento": "10012000",
+        "tipo": TIPOCONTA.CONTACORRENTE,
         "extrato": "0"
     }
 ]
