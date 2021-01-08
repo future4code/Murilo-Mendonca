@@ -1,0 +1,28 @@
+{
+  "name": "projetos15",
+  "version": "1.0.0",
+  "description": "projeto F4Bank - Semana 15",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev ./src/index.ts",
+    "start": "tsc && node ./build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "projeto",
+    "labenu"
+  ],
+  "author": "Murilo Mendonca",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.9",
+    "@types/express": "^4.17.9",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
