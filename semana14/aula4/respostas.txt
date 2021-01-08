@@ -8,4 +8,4 @@ B) R: A entidade nesse caso seria a "user"
 
 A) R: 
 
-B) R: Utilizando o enum e verificando se ele é válido.
+B) R: Utilizando o ENUM e verificando se ele é válido.

@@ -4,7 +4,7 @@ import cors from 'cors';
 
 //extra: importando configuração de rede do node
 import { AddressInfo } from "net";
-import { type } from 'os';
+
 //iniciando a aplicação web com express
 const app = express();
 
@@ -30,42 +30,42 @@ let users: user[] = [
         id: 1,
         name: "Alice",
         email: "alice@email.com",
-        type: "ADMIN",
+        type: UserType.ADMIN,
         age: 12
     },
     {
         id: 2,
         name: "Bob",
         email: "bob@email.com",
-        type: "NORMAL",
+        type: UserType.NORMAL,
         age: 36
     },
     {
         id: 3,
         name: "Coragem",
         email: "coragem@email.com",
-        type: "NORMAL",
+        type: UserType.NORMAL,
         age: 21
     },
     {
         id: 4,
         name: "Dory",
         email: "dory@email.com",
-        type: "NORMAL",
+        type: UserType.NORMAL,
         age: 17
     },
     {
         id: 5,
         name: "Elsa",
         email: "elsa@email.com",
-        type: "ADMIN",
+        type: UserType.ADMIN,
         age: 17
     },
     {
         id: 6,
         name: "Fred",
         email: "fred@email.com",
-        type: "ADMIN",
+        type: UserType.ADMIN,
         age: 60
     }
 ]
@@ -87,13 +87,46 @@ app.get("/user", (req: Request, res: Response) => {
 })
 
 // getUserByType
+// app.get("/user/:type", (req: Request, res: Response) => {
+//     let errorCode: number = 400
 
+//     try {
+
+//     } catch (error) {
+//         res.status(errorCode).send(error.message);
+//     }
+// })
+
+// getUserByName
+app.get("/user", (req: Request, res: Response) => {
+    let errorCode: number = 400;
+    try {
+        const nome: string = req.query.name as string;
+
+        if (!nome) {
+            errorCode = 422;
+            throw new Error("Nome inválido. Por favor preencha corretamente");
+        }
+
+        const myUser = users.find(((u: user) => u.name === nome));
+        if (!myUser) {
+            errorCode = 404;
+            throw new Error("Usuário não encontrado");
+        }
+
+        res.status(200).send(myUser);
+
+    } catch (error) {
+        res.status(errorCode).send(error.message);
+    }
+
+});
 
 
 const server = app.listen(process.env.PORT || 3003, () => {
     if (server) {
         const address = server.address() as AddressInfo;
-        console.log(`Server is running in http://localhost: ${address.port}`);
+        console.log(`Server is running in http://localhost:${address.port}`);
     } else {
         console.error(`Failure upon starting server.`);
     }
