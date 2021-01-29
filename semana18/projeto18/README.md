@@ -5,7 +5,7 @@ Projeto elaborado para conclusão da semana 18, do módulo de backend.
 ## Requisitos básicos:
 * Todos os endpoints, com exceção do Signup e Login, devem exigir autenticação.
 
-- Signup
+- Signup: OK
     Método: POST
     Path: /signup
 

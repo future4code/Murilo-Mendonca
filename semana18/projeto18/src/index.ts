@@ -4,6 +4,7 @@ import knex from 'knex'
 import dotenv from "dotenv";
 import cors from 'cors'
 import signup from './endpoints/signup';
+import { login } from './endpoints/login';
 
 const app: Express = express();
 
@@ -24,7 +25,7 @@ export const connection = knex({
 });
 
 app.post('/user/signup', signup)
-app.post('/user/login')
+app.post('/user/login', login)
 app.post('/recipe')
 
 app.get('/user/profile')

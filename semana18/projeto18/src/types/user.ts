@@ -4,3 +4,8 @@ export type user = {
     email: string,
     password: string
 }
+
+export type loginInput = {
+    email: string,
+    password: string
+}
