@@ -1,10 +1,14 @@
-import { connection } from '../index'
+import { connection } from "../index";
 
-export async function getUserByEmail(email: string) {
-    const result = await
-        connection
+export const selectUserById = async (email: string): Promise<any> => {
+    try {
+        const result = await connection("cookenu_users")
             .select("*")
-            .from("cookenu_users")
-            .where({ email });
-    return result[0];
-};
+            .where({ email })
+
+        return result[0]
+
+    } catch (error) {
+        throw new Error(error.message || error.sqlMessage);
+    }
+}
