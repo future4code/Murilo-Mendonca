@@ -1,0 +1,32 @@
+### signup
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name":"Felipe Polato <3",
+    "email":"felipe@email.com",
+    "password":"123456"
+}
+
+### login
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email":"murilo@email.com",
+    "password":"123456789"
+}
+
+## createRecipe
+POST http://localhost:3003/recipe/create
+Authorization: 
+Content-Type: application/json
+
+{
+    "title":"Tiramissu",
+    "description":"Ingredientes: bla bla bla. Modo de preparo: bla bla bla."
+}
+
+### getMyProfile
+GET http://localhost:3003/user/profile
+
